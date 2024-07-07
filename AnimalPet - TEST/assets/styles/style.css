@@ -1,0 +1,124 @@
+
+* {
+    user-select: none;        
+    -webkit-user-drag: none;  
+    outline: none;     
+}
+
+@font-face {
+    font-family: 'Pixel-7';
+    src: url("../fonts/smallest_pixel-7.ttf");
+}
+
+body {
+    width: 450px;
+    height: 354px;
+}
+
+p{
+    font-family: 'Pixel-7';
+}
+
+.frame{
+    position: fixed;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.top-bar-container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 450px;
+    height: 66px;
+}
+
+.main-container{
+    background: url(../images/backgrounds/background_home.png);
+    width: 450px;
+    height: 354px;
+}
+
+
+.bottom-bar-container{
+    background-color: #5c7e3a;
+    position: fixed;
+    top: 282px;
+    left: 0px;
+    width: 450px;
+    height: 72px;
+}
+
+.home-btn{
+    top: 289px;
+    left: 169px;
+    position: fixed;
+    z-index: 2;
+}
+
+.play-btn{
+    top: 289px;
+    left: 236px;
+    position: fixed;
+    z-index: 2;
+}
+
+
+.animal-container {
+    position: fixed;
+    display: inline-block; 
+    top: 117px;
+    left: 85px;
+}
+
+
+#emote {
+    position: absolute;
+    left: 166px;
+    top: -25px;
+}
+
+
+
+.food-img{
+    top: 225px;
+    left: 291px;
+    position: fixed;
+    z-index: 2;
+}
+
+.water-img{
+    top: 225px;
+    left: 357px;
+    position: fixed;
+    z-index: 2;
+}
+
+
+
+
+
+.settings-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+    /* Même taille que la fenêtre*/
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+

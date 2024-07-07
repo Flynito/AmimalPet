@@ -1,0 +1,50 @@
+import {addFood, consumeFood, startRandomFoodConsumption} from './components/food&waterManager.js';
+import { displayEmote } from './components/emotes.js';
+
+let gameActive = true;
+
+
+let loveBarProgress = 0; 
+let loveBarLevel = 1;
+let coinBar = 0;
+
+
+const loveCountElement = document.getElementById('love-count');
+const loveBarImage = document.getElementById('loveBarImage');
+
+const settings = document.getElementById('settings');
+
+const home = document.getElementById('home');
+const games = document.getElementById('games');
+
+
+
+
+function updateLoveBar(){
+    // Update the love bar image based on the value of loveBarProgress
+  if (loveBarProgress >= 5) {
+    loveBarProgress = 0;
+    loveBarLevel = loveBarLevel + 1;
+  }
+  else {
+    loveBarProgress = loveBarProgress + 1;
+  }
+
+  loveCountElement.textContent = loveBarLevel;
+  loveBarImage.src = `assets/images/loveBar/loveBar_${loveBarProgress}.png`;
+}
+
+
+
+settings.addEventListener('click', () => {
+  
+  if(gameActive == true){
+    gameActive = false;
+  }
+  else{
+    gameActive = true;
+  }
+  
+});
+
+startRandomFoodConsumption(gameActive);

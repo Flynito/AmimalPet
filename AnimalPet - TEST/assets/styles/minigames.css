@@ -1,0 +1,97 @@
+
+* {
+  user-select: none;        
+  -webkit-user-drag: none;  
+  outline: none;     
+}
+
+@font-face {
+  font-family: 'Pixel-7';
+  src: url("../fonts/smallest_pixel-7.ttf");
+}
+
+body {
+  width: 450px;
+  height: 354px;
+}
+
+p{
+  font-family: 'Pixel-7';
+}
+
+.frame{
+  position: fixed;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.top-bar-container{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 450px;
+  height: 66x;
+}
+
+.main-container{
+  background: url(../images/backgrounds/background_home.png);
+  width: 450px;
+  height: 354px;
+}
+
+
+.bottom-bar-container{
+  background-color: #5c7e3a;
+  position: fixed;
+  top: 282px;
+  left: 0px;
+  width: 450px;
+  height: 72px;
+}
+
+.home-btn{
+  top: 289px;
+  left: 169px;
+  position: fixed;
+  z-index: 2;
+}
+
+.play-btn{
+  top: 289px;
+  left: 236px;
+  position: fixed;
+  z-index: 2;
+}
+
+
+
+
+
+/* games.css */  
+.minigames-grid {
+  display: grid;
+  position: fixed;
+  top: 89px;
+  left: 32px;
+  grid-template-columns: repeat(3, 114px);
+  grid-template-rows: repeat(2, 70px);
+  gap: 20px 21px;
+  
+}
+
+.minigame-tumbnail {
+  width: 114px;
+  height: 70px;
+}
+
+.minigame-name{
+  font-family: 'Pixel-7';
+  padding: 0;
+  margin-left: 10px;
+  margin-top: -4px;
+  color: #0e0d0d;
+}
+  
+  
+
