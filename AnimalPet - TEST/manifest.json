@@ -1,0 +1,20 @@
+{
+  "name": "AmimalPet",
+  "description": "Jeu d'extension AmimalPet",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://amimal.freeddns.org/Extension/isLoggedInExtension.php",
+    "https://amimal.freeddns.org/login_extension.php"
+  ],
+  "background": {
+    "service_worker": "scriptsLogin/background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "assets/images/logo_dessin.png"
+  }
+}

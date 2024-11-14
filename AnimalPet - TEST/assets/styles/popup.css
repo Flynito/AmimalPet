@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .game-container {
+    width: 300px;
+  }
+  
+  #pet {
+    margin: 20px 0;
+  }
+  
+  #pet img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .controls {
+    margin: 10px 0;
+  }
+  
+  .controls button {
+    margin: 5px;
+  }
+  
+  #status {
+    margin: 10px 0;
+  }
+  

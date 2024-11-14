@@ -1,0 +1,130 @@
+
+* {
+    user-select: none;        
+    -webkit-user-drag: none;  
+    outline: none;     
+}
+
+body {
+    width: 400px;
+    height: 300px;
+}
+
+.game-container{
+    background: url(../images/background.png);
+    width: 400px;
+    height: 300px;
+}
+
+/* Position et style des bouttons */
+.top-bar{
+    display: grid;
+    align-items: center;
+}
+
+.progress-containers{
+    display: flex;
+    margin: 8px;
+}
+
+.coin-container{
+    margin-left: 10px;
+}
+
+#love-count{
+    justify-self: end;
+    position: fixed;
+    left: 18px;
+    color: aliceblue;
+}
+
+
+#coin-count{
+    justify-self: end;
+    position: fixed;
+    top: 10px;
+    left: 180px;
+    color: aliceblue;
+}
+
+
+.settings-btn{
+    display: grid;
+    justify-self: end;
+    position: fixed;
+    
+}
+
+
+.main-content{
+    display: flex;
+    position: fixed;
+    top: 180px;
+    left: 240px;
+}
+
+
+
+.animal-container {
+    position: fixed;
+    display: inline-block; 
+    top: 110px;
+    left: 80px;
+}
+
+#animal {
+    position: relative; /* Ensure the animal's position is relative */
+}
+
+#emote {
+    position: absolute;
+    left: 130px; /* Adjust this value to set the emote to the desired distance to the left of the animal */
+    top: -20px; /* Adjust this value to set the emote's vertical alignment relative to the animal */
+}
+
+
+
+.food{
+    margin: 10px;
+}
+
+.water{
+    margin-left: 0;
+    margin: 10px;
+}
+
+.bottom-bar{
+    display: flex;
+    position: fixed;
+    top: 258px;
+}
+
+
+
+
+
+
+
+.settings-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+    /* Même taille que la fenêtre*/
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+

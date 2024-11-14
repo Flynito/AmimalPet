@@ -1,0 +1,85 @@
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Pixel-7';
+    src: url("../fonts/smallest_pixel-7.ttf");
+}
+
+p {
+    font-family: 'Pixel-7';
+    font-size: large;
+}
+
+.top-bar {
+    background-color: #5c7e3a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 66px;
+}
+
+#loveBarImage {
+    top: 20px;
+    left: 32px;
+    position: fixed;
+}
+
+#coinBarImage {
+    top: 20px;
+    left: 173px;
+    position: fixed;
+}
+
+.love-container {
+    position: fixed;
+    width: 450px;
+    height: 66px;
+    top: 0;
+    left: 0;
+}
+
+#love-count {
+    position: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    left: 48px;
+    top: 28px;
+    z-index: 4;
+}
+
+#coinCounter {
+    position: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    left: 197px;
+    top: 32px;
+    z-index: 4;
+    text-align: right;
+    width: 50px;
+}
+
+.coin-container {
+    display: flex;
+    align-items: center;
+}
+
+.number-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.settings-btn {
+    top: 17px;
+    left: 374px;
+    position: fixed;
+    z-index: 2; /* car le z-index de frame est à 1, on veut pouvoir cliquer sur les boutons*/
+}
